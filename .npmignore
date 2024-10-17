@@ -1,0 +1,6 @@
+.git
+.idea
+./src
+./node_modules
+./vite.config.js
+./tsconfig.*

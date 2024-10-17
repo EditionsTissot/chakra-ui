@@ -1,0 +1,3 @@
+[submodule "src/suppercase"]
+	path = src/suppercase
+	url = git@github.com:EditionsTissot/suppercase.git
