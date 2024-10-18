@@ -1,7 +1,24 @@
-import { defineConfig } from 'vite'
-//import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+// import { resolve } from "path";
 
 // https://vitejs.dev/config/
-export default defineConfig({
- // plugins: [react()],
-})
+export const viteConfig = {
+  plugins: [],
+  root: "",
+  build: {
+    outDir: "dist",
+    emptyOutDir: true,
+    manifest: true,
+    rollupOptions: {
+      input: {
+        main:"src/index.ts",
+      },
+      output: {
+        entryFileNames: "[name].js",
+        chunkFileNames: "[name].js",
+      },
+    },
+  },
+};
+
+export default defineConfig(viteConfig);

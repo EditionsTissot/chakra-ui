@@ -1,2 +1,2 @@
-export * from './ChakraInput.tsx';
-export * from './ChakraSelect.tsx';
+export * from './components';
+export {TissotTheme} from './TissotTheme';

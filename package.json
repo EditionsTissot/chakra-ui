@@ -1,7 +1,7 @@
 {
   "name": "editions-tissot-chakra-ui",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.2",
   "type": "module",
   "main": "index.ts",
   "repository": {

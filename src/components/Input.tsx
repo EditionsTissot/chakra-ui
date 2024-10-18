@@ -1,11 +1,14 @@
-import { Input, InputProps } from '@chakra-ui/react';
+import {
+  Input as ChakraInput,
+  InputProps as ChakraInputProps
+} from '@chakra-ui/react';
 
-interface MyInputProps extends InputProps {
+interface InputProps extends ChakraInputProps {
   label: string;
   error?: boolean;
   errorMessage?: string;
 }
-export default function ChakraInput({
+export default function Input({
   label,
   name,
   value,
@@ -13,10 +16,10 @@ export default function ChakraInput({
   onChange,
   error = false,
   errorMessage = '',
-}: MyInputProps) {
+}: InputProps) {
   return (
     <div className="et-form-group">
-      <Input
+      <ChakraInput
         className={error ? 'et-has-error' : ''}
         name={name}
         value={value}
