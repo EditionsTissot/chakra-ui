@@ -1,1 +1,1 @@
-{"root":["./src/App.tsx","./src/Chakra.tsx","./src/TissotTheme.ts","./src/index.ts","./src/vite-env.d.ts","./src/components/Input.tsx","./src/components/Select.tsx","./src/components/index.ts"],"version":"5.6.3"}
+{"root":["./src/TissotTheme.ts","./src/index.ts","./src/stories.tsx","./src/vite-env.d.ts","./src/components/Input.tsx","./src/components/Select.tsx","./src/components/index.ts"],"version":"5.6.3"}
