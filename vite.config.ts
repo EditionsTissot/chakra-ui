@@ -1,24 +1,28 @@
 import { defineConfig } from "vite";
-// import { resolve } from "path";
+import react from "@vitejs/plugin-react";
+import dts from "vite-plugin-dts";
 
 // https://vitejs.dev/config/
-export const viteConfig = {
-  plugins: [],
-  root: "",
+export default defineConfig({
+  plugins: [react(), dts()],
   build: {
+    lib: {
+      entry: "src/index.ts",
+      name: "EditionsTissotChakraUI",
+      fileName: (format) => `editions-tissot-chakra-ui.${format}.js`,
+    },
     outDir: "dist",
-    emptyOutDir: true,
-    manifest: true,
+    sourcemap: true,
     rollupOptions: {
-      input: {
-        main:"src/index.ts",
-      },
+      external: ["react", "react-dom", "@chakra-ui/react"],
       output: {
-        entryFileNames: "[name].js",
-        chunkFileNames: "[name].js",
+        globals: {
+          react: "React",
+          "react-dom": "ReactDOM",
+          "@chakra-ui/react": "ChakraUI",
+        },
       },
     },
   },
-};
+});
 
-export default defineConfig(viteConfig);
