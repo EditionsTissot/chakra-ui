@@ -1,7 +1,7 @@
 {
   "name": "editions-tissot-chakra-ui",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.1.0",
   "type": "module",
   "main": "index.ts",
   "repository": {
@@ -16,7 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "@chakra-ui/react": "^2.10.3",
-    "editions-tissot-chakra-ui": "^0.0.3",
+    "editions-tissot-chakra-ui": "^0.0.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
