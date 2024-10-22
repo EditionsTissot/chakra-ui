@@ -1,10 +1,13 @@
 {
   "name": "editions-tissot-chakra-ui",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
-  "main": "index.ts",
+  "main": "dist/editions-tissot-chakra-ui.cjs.js",
+  "module": "dist/editions-tissot-chakra-ui.esm.js",
+  "types": "dist/index.d.ts",
   "repository": {
+    "type": "git",
     "url": "git+https://github.com/EditionsTissot/chakra-ui.git"
   },
   "scripts": {
@@ -16,7 +19,6 @@
   "license": "MIT",
   "dependencies": {
     "@chakra-ui/react": "^2.10.3",
-    "editions-tissot-chakra-ui": "^0.0.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
